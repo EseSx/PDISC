@@ -1,18 +1,20 @@
 public class Alumno {
    // ---- Declaro los atributos ----
-   // Private: para que no se modifiquen.
-   // final: para que no se pueda cambiar el valor.
-   // Float: para que sea de tipo Float.
+   // Private y final tienen utilidades similares, basicamente impiden que se
+   // modifiquen los atributos. Su principal diferencia radica en que Private puede
+   // modificar los atributos desde dentro de la clase con un setter mientras que
+   // final no
+
    private final Float nota1;
    private final Float nota2;
-   
+
    // ---- Constructor ----
-   public Alumno(Float nota1, Float nota2){
+   public Alumno(Float nota1, Float nota2) {
       this.nota1 = nota1;
       this.nota2 = nota2;
-   } 
+   }
 
-   // ---- Metodos patra ver los atributos de forma individual ---- 
+   // ---- Metodos patra ver los atributos de forma individual ----
    public Float getNota1() {
       return nota1;
    }
@@ -22,13 +24,13 @@ public class Alumno {
    }
 
    // ---- Metodo para promediar la nota ----
-   public Float promediar(Float nota1, Float nota2) {
+   public Float promediar() {
       return (nota1 + nota2) / 2;
    }
 
-   // ---- Devolucion de la nota promediada ----
+   // ---- Devuelvo algo siempre que se imprima el objeto ----
    @Override
    public String toString() {
-      return "Promedio " + promediar(nota1, nota2);
+      return "Promedio " + promediar();
    }
 }
