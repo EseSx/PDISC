@@ -1,8 +1,8 @@
 public class Pelicula {
     // --- Atributos ---
-    String Titulo;
-    String Director;
-    int Duracion;
+    private String Titulo;
+    private String Director;
+    private int Duracion;
 
     // --- Metodos ---
     // Contructores
