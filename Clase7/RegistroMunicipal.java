@@ -14,7 +14,9 @@ public class RegistroMunicipal {
 
     public void mostrarLista() {
         for (Vehiculo rm : this.listaVehiculos) {
+            System.out.println("------------------------------");
             rm.mostrarDatos();
+            System.out.println("------------------------------");
         }
     }
 }
