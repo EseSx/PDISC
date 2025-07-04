@@ -6,11 +6,16 @@ public class Main {
         vehiculos[1] = new Moto(200, "888888", "2019", "Tamara Gutierrez");
         vehiculos[2] = new Camion(3000, "ABCDEF", "2006", "Geronimo Tarrasco");
 
+        RegistroMunicipal registro = new RegistroMunicipal(vehiculos);
+
         for (Vehiculo v : vehiculos) {
             System.out.println("------------------------------");
             v.mostrarDatos();
             v.calcularImpuestos();
             System.out.println("------------------------------");
         }
+
+        System.out.println("---- Lista ----");
+        registro.mostrarLista();
     }
 }
